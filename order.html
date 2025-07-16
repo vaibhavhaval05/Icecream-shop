@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Your Order</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="ind.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 50px;
+    }
+    .order-form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="order-form">
+      <h2 class="text-center mb-4">Place Your Order</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="e.g. 9876543210" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="address" class="form-label">Delivery Address</label>
+          <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="item" class="form-label">Select Item</label>
+          <select class="form-select" id="item" required>
+            <option value="">Choose an item</option>
+            <option>Ice Cream</option>
+            <option>Chocolate Shake</option>
+            <option>Strawberry Sundae</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" id="quantity" min="1" value="1" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

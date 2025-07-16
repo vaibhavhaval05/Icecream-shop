@@ -1,0 +1,47 @@
+body {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.25rem;
+      color: white;
+      background-image: url('ice1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .blur {
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.4);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding-top: 20px;
+    }
+
+    header {
+      width: 50%;
+      background: linear-gradient(#5e3b3b, #1e1f1e, green);
+      color: white;
+      padding: 20px 0;
+      margin-top: 20px;
+      border-radius: 100px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #1e1f1e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    textarea {
+      color: #111;
+      background-color: #f4f2ef;
+      width: 75%;
+      margin: 20px auto;
+    }

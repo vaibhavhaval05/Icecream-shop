@@ -1,0 +1,76 @@
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7e9e5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #4d3b32;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      margin: 0 5px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f28ca3 !important;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-section {
+      position: relative;
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      filter: blur(4px);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .hero-content h1.mask-text {
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4, #ffdde1);
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cookies Ice Cream Gallery</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    .background {
+      background: url('Cookies.jpg') no-repeat center center/cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(6px);
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 3rem 1rem;
+    }
+
+    h1 {
+      color: #e7c8a4;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .icecream-card {
+      overflow: hidden;
+      border: none;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .icecream-card img {
+      width: 100%;
+      height: 20em;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .icecream-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-outline-dark {
+      border-radius: 30px;
+      padding: 6px 20px;
+      font-weight: 500;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="container content">
+    <h1 class="text-center mb-5">Cookies Ice Cream Gallery</h1>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="icecream-card">
+          <img src="Cookies1.jpg" alt="Cookies Ice Cream 1" class="img-fluid shadow">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icecream-card">
+          <img src="Cookies2.jpg" alt="Cookies Ice Cream 2" class="img-fluid shadow">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icecream-card">
+          <img src="Cookies3.jpg" alt="Cookies Ice Cream 3" class="img-fluid shadow">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icecream-card">
+          <img src="Cookies4.jpg" alt="Cookies Ice Cream 4" class="img-fluid shadow">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icecream-card">
+          <img src="Cookies5.jpg" alt="Cookies Ice Cream 5" class="img-fluid shadow">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icecream-card">
+          <img src="Cookies6.jpg" alt="Cookies Ice Cream 6" class="img-fluid shadow">
+        </div>
+      </div>
+    </div>
+
+    <div class="text-start mt-4">
+      <a href="gallery.html" class="btn btn-outline-dark">&larr; Back to Menu</a>
+    </div>
+  </div>
+
+</body>
+</html>
